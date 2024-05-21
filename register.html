@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TravelBuddy </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"> </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+  <style>
+    .login {
+      min-height: 100vh;
+    }
+
+    .bg-image {
+      background-image: url('https://images.unsplash.com/photo-1586611292717-f828b167408c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .login-heading {
+      font-weight: 300;
+    }
+
+    .btn-login {
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;
+    }
+
+    .form-control {
+      font-size: 15px !important;
+    }
+
+    .col-md-9 {
+      padding-right: 0px !important;
+    }
+
+    .login-heading {
+      font-size: 30px;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .label,
+    .form-label {
+      margin-bottom: 0px !important;
+    }
+  </style>
+</head>
+
+<body  onload="return callAjaxdata();">
+  <div class="container-fluid ps-md-0">
+    <div class="bg-overlay"></div>
+    <div class="row g-0">
+      <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+      <div class="col-md-8 col-lg-6">
+        <div class="login d-flex align-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-9 col-lg-8 mx-auto">
+                <h3 class="login-heading mb-4">Registration Form</h3>
+                <form method="POST">
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <div class="form-outline">
+                        <label class="form-label" for="title">Title</label>
+                        <select class="custom-select d-block w-100 p-2" id="title"
+                          style="border: 1px solid #ced4da; border-radius: 5px;">
+                          <option value="">Title</option>
+                          <option>Miss</option>
+                          <option>Mrs</option>
+                          <option>Mr</option>
+                          <option>Other</option>
+                        </select>
+                        <div id="TError" style="color: red" ;></div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="fn">First name</label>
+                        <input type="text" id="fn" class="form-control form-control-lg" />
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="mn">Middle name</label>
+                        <input type="text" id="mn" class="form-control form-control-lg" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="ln">Last name</label>
+                        <input type="text" id="ln" class="form-control form-control-lg" />
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="text" id="email" class="form-control form-control-lg" />
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="contact">Mobile</label>
+                        <input type="text" id="contact" class="form-control form-control-lg" maxlength="10" />
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="pincode">Pin Code</label>
+                        <input type="text" id="pincode" class="form-control form-control-lg" maxlength="7" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="state">State</label>
+                        <select class="custom-select d-block w-100 p-2" id="state"
+                          style="border: 1px solid #ced4da; border-radius: 5px;">
+                          <option value="">State</option>
+                          <!-- <option>Maharashtra</option>
+                          <option>Bihar</option>
+                          <option>Karnataka</option>
+                          <option>Other</option> -->
+                        </select>
+                        <div id="TError" style="color: red" ;></div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <div class="form-outline">
+                        <label class="form-label" for="city">City</label>
+                        <select class="custom-select d-block w-100 p-2" id="city"
+                          style="border: 1px solid #ced4da; border-radius: 5px;">
+                          <option value="">City</option>
+                          <!-- <option>Patna</option>
+                          <option>Pune</option>
+                          <option>Bangalore</option>
+                          <option>Other</option> -->
+                        </select>
+                        <div id="TError" style="color: red" ;></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-left pt-1">
+                    <p><a href="" class="btn btn-primary" id="myBtn" onclick="return saveData();">Submit</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div aria-live="polite" aria-atomic="true" style="position: fixed; min-height: 200px;">
+      <div class="toast" style="position: fixed; bottom: 20px; right: 20px;">
+        <div class="toast text-bg-success" role="alert">
+          <div class="toast-body">
+            <div class="d-flex gap-4">
+              <span><i class="fa-solid fa-circle-check fa-lg"></i></span>
+              <div class="d-flex flex-grow-1 align-items-center">
+                <span class="fw-semibold">Successfully Registered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    function saveData() {
+      console.log("Button clicked");
+      var title = document.getElementById('title').value;
+      var fn = document.getElementById('fn').value;
+      var mn = document.getElementById('mn').value;
+      var ln = document.getElementById('ln').value;
+      var email = document.getElementById('email').value;
+      var contact = document.getElementById('contact').value;
+      var pincode = document.getElementById('pincode').value;
+      var city = document.getElementById('city').value;
+      var state = document.getElementById('state').value;
+
+      var model = {
+        title: title,
+        firstName: fn,
+        middleName: mn,
+        lastName: ln,
+        email: email,
+        mobile: contact,
+        pincode: pincode,
+        city: city,
+        state: state
+      };
+      // alert(JSON.stringify(model));
+      $.ajax({
+        cache: false,
+        type: "POST",
+        url: 'http://localhost:8080/api/register',
+        data: JSON.stringify(model),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (response) {
+          console.log(response);
+          // alert(JSON.stringify(response));
+          // alert(JSON.stringify(response));
+          if (response.error) {
+            // alert( "Registration failed: " + response.errorMessage);
+            var errorMessage = response.errorMessage;
+            var toastHtml = `
+            <div class="container">
+              <div aria-live="polite" aria-atomic="true" style="position: fixed; min-height: 200px;">
+                  <div class="toast1" style="position: fixed; bottom: 20px; right: 20px; ">
+                    <div class="toast1 text-bg-danger" role="alert">
+                      <div class="toast-body ">
+                        <div class="d-flex gap-4">
+                          <span><i class="fa-solid fa-circle-exclamation fa-lg"></i></span>
+                          <div class="d-flex flex-grow-1 align-items-center">
+                            <span class="fw-semibold">${errorMessage} &nbsp</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>`;
+            $(toastHtml).appendTo('body');
+            $('.toast1').toast('show');
+          } else {
+            // alert("Registration successful: " +response.successMsg);
+            $('.toast').toast('show');
+            setTimeout(function () {
+              clearValues();
+              window.location.href = "otp1.html";
+            }, 2000);
+
+          }
+
+        },
+        failure: function (response) {
+          alert("error");
+        },
+        error: function (response) {
+          alert("error");
+        }
+      });
+      // clearValues();
+      return false;
+    }
+    function clearValues() {
+      document.getElementById('title').value = '';
+      document.getElementById('fn').value = '';
+      document.getElementById('mn').value = '';
+      document.getElementById('ln').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('contact').value = '';
+      document.getElementById('pincode').value = '';
+      document.getElementById('city').value = '';
+      document.getElementById('state').value = '';
+    }
+
+  </script>
+ <script>
+  function callAjaxdata() {
+      $.ajax({
+          cache: false,
+          type: "GET",
+          url: 'http://localhost:8080/api/state_master',
+          contentType: "application/json",
+          dataType: 'json',
+          success: function (result) {
+              console.log(result);
+              var select = document.getElementById("state");
+              for (var i = 0; i < result.length; i++) {
+                  var option = document.createElement("option");
+                  option.text = result[i].stateName;
+                  option.value = result[i].stateId; 
+                  
+                  select.add(option);
+              }
+          },
+          error: function (xhr, resp, text) {
+              console.log(xhr, resp, text);
+          }
+      });
+    
+      $('#state').change(function() {
+          var selectedStateId = $(this).val();
+          console.log("Selected State ID:", selectedStateId);
+          $.ajax({
+              cache: false,
+              type: "GET",
+              url: 'http://localhost:8080/api/district_master?stateId=' + selectedStateId,
+              contentType: "application/json",
+              dataType: 'json',
+              success: function (result) {
+                  console.log(result);
+                  var select = document.getElementById("city");
+                  select.innerHTML = ""; 
+                  for (var i = 0; i < result.length; i++) {
+                      var option = document.createElement("option");
+                      option.text = result[i].districtName;
+                      option.value = result[i].districtId; 
+                      select.add(option);
+                  }
+              },
+              error: function (xhr, resp, text) {
+                  console.log(xhr, resp, text);
+              }
+          });
+      });
+  }
+</script>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

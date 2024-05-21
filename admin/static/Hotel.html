@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="TravelBuddy">
+	<meta name="keywords"
+		content="TravelBuddy, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<link rel="canonical" href="https://demo-basic.TravelBuddy.io/pages-blank.html" />
+	<title>Hotels</title>
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		th {
+			color: black !important;
+			font-weight: bold !important;
+		}
+
+		.btn-check:checked+.btn,
+		.btn.active,
+		.btn.show,
+		.btn:first-child:active,
+		:not(.btn-check)+.btn:active {
+			background-color: #41b12f;
+			border-color: #203d56;
+			color: var(--bs-btn-active-color);
+		}
+
+		.btn:focus-visible {
+			background-color: #203d56;
+			border-color: #203d56;
+			box-shadow: #203d56;
+			color: var(--bs-btn-hover-color);
+			outline: 0;
+		}
+
+		.btn:hover {
+			background-color: #203d56;
+			border-color: #203d56;
+			color: var(--bs-btn-hover-color);
+			text-decoration: none;
+		}
+
+		.btn-check:checked+.btn,
+		.btn.active,
+		.btn.show,
+		.btn:first-child:active,
+		:not(.btn-check)+.btn:active {
+			background-color: #203d56;
+			border-color: #203d56;
+			color: var(--bs-btn-active-color);
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body onload="return callAjaxdata();">
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar js-sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+					<span class="align-middle">TravelBuddy</span>
+				</a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="index.html">
+							<i class="align-middle" data-feather="sliders"></i> <span
+								class="align-middle">Dashboard</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="Hotel.html">
+							<i class="align-middle" data-feather="home"></i> <span class="align-middle">Hotel</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="room.html">
+							<i class="align-middle" data-feather="user"></i> <span class="align-middle">Room</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+							<i class="align-middle" data-feather="bold"></i> <span class="align-middle">Booking</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+							<i class="align-middle" data-feather="log-in"></i> <span
+								class="align-middle">Checkings</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+							<i class="align-middle" data-feather="log-out"></i> <span
+								class="align-middle">Checkouts</span>
+						</a>
+					</li>
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+							<i class="align-middle" data-feather="book"></i> <span class="align-middle">Reports</span>
+						</a>
+					</li>
+					<div class="sidebar-cta">
+						<div class="sidebar-cta-content">
+
+							<div class="d-grid">
+								<a href="upgrade-to-pro.html" class="btn btn-primary">Logout</a>
+							</div>
+						</div>
+					</div>
+
+				</ul>
+
+				<div class="sidebar-cta">
+
+				</div>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle js-sidebar-toggle">
+					<i class="hamburger align-self-center"></i>
+				</a>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+								data-bs-toggle="dropdown">
+								<i class="align-middle" data-feather="settings"></i>
+							</a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+								data-bs-toggle="dropdown">
+								<i class="align-middle" data-feather="user"></i> <span
+									class="text-dark align-middle">Admin</span>
+							</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
+										data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1"
+										data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="index.html"><i class="align-middle me-1"
+										data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1"
+										data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+					<div class="row">
+						<div class="col">
+							<h1 class="h3 mb-3"><strong>Hotel</strong> Details</h1>
+						</div>
+						<div class="col-auto">
+							<h1 class="h3 mb-3"><a href="addHotel.html" class="btn btn-primary">Add +</a></h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="card table-responsive">
+								<table class="table my-0">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Tagline</th>
+											<th>City</th>
+											<th>Description</th>
+											<th>Address</th>
+											<th>Email</th>
+											<th>Contact</th>
+											<th>Email1</th>
+											<th>Contact1</th>
+											<th>Status</th>
+
+										</tr>
+									</thead>
+									<tbody id="record">
+										<!-- Table rows will be dynamically added here -->
+									</tbody>
+
+								</table>
+
+							</div>
+							<div>
+								<table id="record">
+
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script>
+		function callAjaxdata() {
+			$.ajax({
+				cache: false,
+				type: "GET",
+				url: 'http://localhost:8080/api/hotel',
+				contentType: "application/json",
+				dataType: 'json',
+				success: function (result) {
+					console.log(result);
+					var data = "";
+					for (var i = 0; i < result.length; i++) {
+						data += "<tr><td>" + result[i].name + "</td><td>" + result[i].tagline + "</td><td>"
+							+ result[i].city + "</td><td>" + result[i].description + "</td><td>"
+							+ result[i].address + "</td><td>" + result[i].email + "</td><td>"
+							+ result[i].contact + "</td><td>" + result[i].email1 + "</td><td>"
+							+ result[i].contact1 + "</td><td style='display: flex; align-items: center;'>"
+							+ "<span class='text-danger'><i class='bi bi-trash3-fill'></i></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+							+ "<a href='updateHotel.html?id=" + result[i].id + "'><i class='bi bi-pencil-square'></i></a></td></tr>";
+					}
+
+					$('#record').html(data);
+				},
+				error: function (xhr, resp, text) {
+					console.log(xhr, resp, text);
+				}
+			});
+		}
+	</script>
+
+	<!-- <script>
+		function callAjaxdata() {
+			alert(1);
+			$.ajax({
+				cache: false,
+				type: "GET",
+				url: 'http://localhost:8080/api/hotel',
+				contentType: "application/json",
+				dataType: 'json',
+				success: function (result) {
+					console.log(result);
+					//   document.getElementById("m").innerHTML = result[0].id;
+					//   document.getElementById("g").innerHTML = result[0].name;
+					var data = "<tr><th>id</th><th>name</th><th>tagline</th><th>city</th><th>description</th><th>address</th><th>email</th><th>contact</th></tr>";
+					for (var i = 0; i < result.length; i++) {
+						data = data + "<tr><td>" + result[i].id + "</td><td>" + result[i].name + "</td><td>"
+							+ result[i].tagline + "</td><td>" + result[i].city + "</td><td>" 
+							+ result[i].description + "</td><td>" + result[i].address + "</td><td>"
+							+ result[i].email + "</td><td>" + result[i].contact + "</td><tr/>";
+
+					}
+					console.log(data);
+					document.getElementById("record").innerHTML = data;
+				},
+				error: function (xhr, resp, text) {
+					console.log(data);
+					console.log(xhr, resp, text);
+				}
+			});
+		}
+
+	</script> -->
+
+
+	<script src="js/app.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</body>
+
+</html>

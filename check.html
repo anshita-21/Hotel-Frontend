@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TravelBuddy </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="validation.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif !important;
+        }
+
+        .container {
+            max-width: 1000px;
+        }
+
+        .lh-condensed {
+            line-height: 1.25;
+        }
+
+        span {
+            font-weight: 400;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const myCarouselElement = document.querySelector('#carouselExampleAutoplaying');
+            const carousel = new bootstrap.Carousel(myCarouselElement, {
+                interval: 6000,
+                touch: false
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TravelBuddy<span>Travel Agency</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+         <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li> -->
+                    <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Room</a></li>
+                    <li class="nav-item"><a href="blog-single.html" class="nav-link">Room Detail</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="hero-wrap hero-wrap-2 js-fullheight"
+        style="background-image: url('image/a3.jpg');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <p class="breadcrumbs"><span class="mr-2"><a href="contact.html">Room<i
+                                    class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a
+                                href="blog-single.html"> Room Details<i class="fa fa-chevron-right"></i></a></span>
+                        <span> CheckOut Form<i class="fa fa-chevron-right"></i></span>
+                    </p>
+                    <h1 class="mb-0 bread"> Review Your Booking</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 ftco-animate py-md-5 mt-md-5 pr-5">
+                    <h4 class="mb-3">Billing Address</h4>
+                    <form method="post" onsubmit="return test();">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="d-none d-lg-block"><i class="bi bi-person-fill"></i> First
+                                    Name</label>
+                                <input type="text" class="form-control" name="FName" id="fname"
+                                    placeholder="First Name" />
+                                <div id="fnameError" style="color: red" ;></div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="d-none d-lg-block"><i class="bi bi-person-fill"></i> Middle
+                                    Name</label>
+                                <input type="text" class="form-control" name="mName" id="mname"
+                                    placeholder="Middle Name" />
+                                <div id="mnameError" style="color: red" ;></div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="lastName" class="d-none d-lg-block"><i class="bi bi-person-fill"></i> Last
+                                    Name</label>
+                                <input type="text" class="form-control" name="LName" id="lname"
+                                    placeholder=" Last Name" />
+                                <div id="lnameError" style="color: red" ;></div>
+                            </div>
+
+                        </div>
+                        <div class=" mb-3">
+                            <label for="username" class="d-none d-lg-block"><i class="bi bi-telephone-fill"></i>
+                                Contact</label>
+                            <div class="input-group">
+                                <!-- <div class="input-group-prepend">
+                                    <span class="input-group-text">+91</span>
+                                </div> -->
+                                <input type="text" id="mobile" class="form-control" name="Mobile" maxlength="10"
+                                    placeholder=" Contact" />
+                                <div id="MError" style="color: red" ;></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="d-none d-lg-block"><i class="bi bi-envelope-at-fill"></i> Email
+                            </label>
+                            <input type="text" name="email" class="form-control" id="email" value=""
+                                placeholder="example@gmail.com" />
+                            <div id="EError" style="color: red" ;></div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="address" class="d-none d-lg-block"><i class="bi bi-house-door-fill"></i>
+                                Address</label>
+                            <input type="text" class="form-control" id="address" name="Add" placeholder="1234 Main St">
+                            <div id="AError" style="color: red" ;></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="address2" class="d-none d-lg-block"><i class="bi bi-house-door-fill"></i>
+                                Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="country"><i class="bi bi-gender-ambiguous"></i> Title</label>
+                                <select class="custom-select d-block w-100 p-2" id="title"
+                                    style="border: 1px solid #ced4da; border-radius: 5px;">
+                                    <option value="">Choose...</option>
+                                    <option>Miss</option>
+                                    <option>Mrs</option>
+                                    <option>Mr</option>
+                                    <option>Other</option>
+                                </select>
+                                <div id="TError" style="color: red" ;></div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="country"><i class="bi bi-geo-alt-fill"></i> Country</label>
+                                <select class="custom-select d-block w-100 p-2" id="country"
+                                    style="border: 1px solid #ced4da; border-radius: 5px;">
+                                    <option value="">Choose...</option>
+                                    <option>India</option>
+                                    <option>NRI</option>
+                                </select>
+                                <div id="CError" style="color: red" ;></div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label for="state"><i class="bi bi-pin-map-fill"></i> State</label>
+                                <select class="custom-select d-block w-100 p-2" id="state"
+                                    style="border: 1px solid #ced4da; border-radius: 5px;">
+                                    <option value="">Choose...</option>
+                                    <option>Karnataka</option>
+                                    <option>Mumbai</option>
+                                    <option>Delhi</option>
+                                </select>
+                                <div id="SError" style="color: red" ;></div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label for="zip" class="d-none d-lg-block"><i class="bi bi-geo-fill"></i> Zip</label>
+                                <input type="text" class="form-control" id="zip" pattern="[0-9]{7}" maxlength="7"
+                                    placeholder="Zip">
+                                <div id="ZError" style="color: red" ;></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="same-address">
+                            <label class="custom-control-label" for="same-address">Shipping address is the same as my
+                                billing
+                                address</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="save-info">
+                            <label class="custom-control-label" for="save-info">Save this information for next
+                                time</label>
+                        </div>
+                        <hr class="mb-4">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit" value="submit">Proceed to
+                            Payment</button>
+                    </form>
+
+                </div>
+
+                <!-- .col-md-8 -->
+                <div class="col-lg-4 sidebar ftco-animate bg-light py-md-5">
+
+                    <div class="sidebar-box ftco-animate">
+                        <div class="categories">
+                            <h3>Order Summary</h3>
+                            <li><a href="blog-single.html">
+                                    <div class="col border"
+                                        style="height: 200px; min-height: 200px; width: 300px; background-image: url('images/room-2.jpg'); background-size: cover;">
+                                    </div>
+                                </a></li>
+                            <li>Room Type : <span style="margin-left: 100px">Classic Room</span></li>
+
+                            <li>Dates : <span style="margin-left: 100px ; ">15
+                                    - 17 March, 2024</span></li>
+                            <li>No of Nights : <span style="margin-left: 130px ; ">
+                                    2 Nights</span></li>
+                            <li>Guests: <span style="margin-left: 120px ; ">
+                                    2 Adults, 1 child</span></li>
+                            <li>
+                                <div class="sidebar-box pt-md-1">
+                                    <form action="#" class="search-form">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Redeem Promo">
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li>Sub Total: <span style="margin-left: 140px ;">Rs.
+                                    4,999</span></li>
+                            <li>Discount: <span style="margin-left: 145px ;">Rs.
+                                    1,000</span></li>
+                            <li>Grand Total: <span style="margin-left: 130px ;">Rs.
+                                    3,999</span></li>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+    </section> <!-- .section -->
+
+
+
+    <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md pt-5">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">About</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the
+                            blind texts.</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md pt-5 ">
+                    <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Infromation</h2>
+                        <ul class="list-unstyled">
+                            <li><a class="py-2 d-block">Online Enquiry</a></li>
+                            <li><a class="py-2 d-block">General Enquiries</a></li>
+                            <li><a class="py-2 d-block">Booking Conditions</a></li>
+                            <li><a class="py-2 d-block">Privacy and Policy</a></li>
+                            <li><a class="py-2 d-block">Refund Policy</a></li>
+                            <li><a class="py-2 d-block">Call Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md pt-5 ">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">Experience</h2>
+                        <ul class="list-unstyled">
+                            <li><a class="py-2 d-block">Adventure</a></li>
+                            <li><a class="py-2 d-block">Hotel and Restaurant</a></li>
+                            <li><a class="py-2 d-block">Beach</a></li>
+                            <li><a class="py-2 d-block">Nature</a></li>
+                            <li><a class="py-2 d-block">Camping</a></li>
+                            <li><a class="py-2 d-block">Party</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md pt-5 ">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain
+                                        View, San
+                                        Francisco, California, USA</span></li>
+                                <li><a><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
+                                            210</span></a></li>
+                                <li><a><span class="icon fa fa-paper-plane"></span><span
+                                            class="text">info@yourdomain.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        ></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

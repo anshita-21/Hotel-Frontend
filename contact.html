@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>TravelBuddy </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contactstyle.css">
+  <style>
+    .bi-star-fill,
+    .bi-star-half {
+      color: rgb(78, 176, 37);
+    }
+
+    .col-sm-3:hover {
+      background-color: rgb(78, 176, 37);
+
+    }
+
+    .col-sm-3:hover .text-color {
+      color: #f8f5f5;
+    }
+
+    .left-arrow:after {
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 15px 12px 0;
+      border-color: transparent #fff transparent transparent;
+    }
+
+    .pl-3,
+    .px-3 {
+      padding-left: 0rem !important;
+    }
+
+    b {
+      color: rgb(78, 176, 37);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">TravelBuddy<span>Travel Agency</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="destination.html" class="nav-link">Destination</a></li>
+          <li class="nav-item"><a href="hotel.html" class="nav-link">Hotel</a></li>
+          <li class="nav-item active"><a href="contact.html" class="nav-link">Room</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+
+
+
+
+
+  <section class="hero-wrap hero-wrap-2 js-fullheight"
+    style="background-image: url('image/a4.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
+                  class="fa fa-chevron-right"></i></a></span> <span>Hotel<i class="fa fa-chevron-right"></i></span></p>
+          <h1 class="mb-0 bread"></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ftco-section bg-light ftco-no-pb">
+    <div class="container-fluid px-0">
+      <div class="row no-gutters justify-content-center ">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <span class="subheading">TravelBuddy</span>
+          <h2 class="mb-4 breadd" id="hotelName"></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section bg-light ftco-no-pb">
+    <div class="container-fluid px-0 " style="margin-bottom: -280px;">
+
+      <div class="row mt-5" style=" padding-top: 200px;">
+
+        <div class="col mt-5">
+          <div class='stage'>
+            <input id='trigger' type='checkbox'>
+            <div class='stage_bg'></div>
+            <div class='stage_inner'>
+              <div class='stage_inner__logo'>
+                Travel
+                <span>Buddy</span>
+              </div>
+
+              <div class='stage_inner__footer'>
+                <i class='fab fa-facebook' style="color: white;"></i>
+                <i class='fab fa-twitter' style="color: white;"></i>
+                <i class='fab fa-instagram' style="color: white;"></i>
+                <div class='f'>
+                  <input placeholder='Your question'>
+                </div>
+              </div>
+              <h5>TravelBuddy</h5>
+              <div class='stage_inner__articleTwo '>
+                <!-- <h3>Should You Be Taking Fish Oil? What a Cardiologist Tells His Patients</h3> -->
+                <p><b>Property highlights</b><br>
+                  <i class="bi bi-geo-alt-fill"></i> Top location: Highly rated by recent guests (8.6)<br><br>
+                  <b>Breakfast info</b><br>
+                  <i class="bi bi-cup-hot-fill"></i> Continental, Buffet, Breakfast<br>
+                  <i class="bi bi-p-circle-fill"></i> Free private parking available at the hotel<br><br>
+                  <b>Loyal customers </b><br><i class="bi bi-emoji-laughing-fill"></i>
+                  more repeat guests here than most other properties.
+
+                </p>
+              </div>
+              <div class='stage_inner__article'>
+                <h2 class='fade'><i class="bi bi-heart-fill"></i> &nbsp; &nbsp; &nbsp;<i
+                    class="bi bi-share-fill"></i>&nbsp; &nbsp; &nbsp;<i class="bi bi-tags-fill"></i> We Match Price</h2>
+                <h3>Elevating Your Stay Experience</h3>
+                <p style="color: white;">Immerse yourself in a stay that transcends the ordinary, offering a blend of
+                  modern elegance and attentive service that will elevate your experience.</p>
+                <p class='auth'>Delia Freeman</p>
+                <p class='date' style="color: white;">21 Feb 2019</p>
+              </div>
+              <div class='stage_inner__bottom'>
+                <div class='link fade'>
+                  <div class='image-container'>
+                    <img
+                      src='image/b4.jpg'
+                      alt='Image' style="   border:white solid 10px;">
+                  </div>
+
+                </div>
+                <div class='link fade'>
+                  <div class='image-container'>
+                    <img
+                      src='image/c4.jpg'
+                      alt='Image' style="   border-top:white solid 10px; border-bottom:white solid 10px;">
+                  </div>
+
+                </div>
+                <div class='link fade'>
+                  <div class='image-container'>
+                    <img
+                      src='image/d4.jpg'
+                      alt='Image' style="   border:white solid 10px;">
+                  </div>
+
+                </div>
+              </div>
+              <div class='stage_inner__list p-4'
+                style="color: black; font-weight: bold; background: rgba(255, 255, 255, 0.5); border-radius: 10px;">
+                <li>Room types & amenities</li>
+                <li>Hotel services & facilities</li>
+                <li>Local attractions</li>
+                <li>Dining options & cuisine</li>
+              </div>
+
+              <div class='stage_inner__centerbox'>
+                <div class='illustration '>
+
+                </div>
+
+                <div class='arrow'>
+                  <label for='trigger'>
+                    <i class="fas fa-arrow-right"></i>
+                  </label>
+                </div>
+                <div class='text'>
+                  <div class='title'>
+                    
+                  </div>
+                  <div class='articles'>
+                    (1,024) Reviews <br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                      class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class='stage_inner__right'>
+                <div class='link fade'>
+                  <div class='image-container'>
+                    <img
+                      src='image/b4.jpg'
+                      alt='Image'>
+                  </div>
+
+                </div>
+                <div class='link fade'>
+                  <div class='image-container'>
+                    <img
+                      src='image/c4.jpg'
+                      alt='Image'>
+                  </div>
+
+                </div>
+                <div class='link fade'>
+                  <div class='image-container'>
+                    <img
+                      src='image/p4.jpg'
+                      alt='Image'>
+                  </div>
+
+                </div>
+
+                <div class='link fade'>
+                  <div class='image-container'>
+                    <img
+                      src='image/q4.jpg'
+                      alt='Image'>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- <div class='stage_inner__right'>
+                <div class='link fade'>
+                  <a href='#'>These are the best health books that came out in 2018</a>
+                  <p>Sam Knight1</p>
+                  <p class='date'>28.12.2018</p>
+                </div>
+                <div class='link fade'>
+                  <a href='#'>These are the best health books that came out in 2018</a>
+                  <p>Sam Knight</p>
+                  <p class='date'>28.12.2018</p>
+                </div>
+                <div class='link fade'>
+                  <a href='#'>These are the best health books that came out in 2018</a>
+                  <p>Sam Knight</p>
+                  <p class='date'>28.12.2018</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- <section class="ftco-section ftco-no-pb contact-section mb-4">
+    <div class="container">
+      <div class="row d-flex contact-info">
+        <div class="col-md-3 d-flex">
+          <div class="align-self-stretch box p-4 text-center">
+            <div id="map" style="height: 200px;"></div>
+            
+          </div>
+        </div>
+        
+        <div class="col-md-3 d-flex">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="fa fa-phone"></span>
+            </div>
+            <h3 class="mb-2">Contact Number</h3>
+            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="fa fa-paper-plane"></span>
+            </div>
+            <h3 class="mb-2">Email Address</h3>
+            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="fa fa-globe"></span>
+            </div>
+            <h3 class="mb-2">Website</h3>
+            <p><a href="#">yoursite.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section style="color: black;">
+    <div class="row pt-4">
+      <div class="col-3 d-flex justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa">
+              <span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M5.361 6.625a6.75 6.75 0 0 0 7.413 6.721 6.93 6.93 0 0 0 6.087-6.988V2.125a1.5 1.5 0 0 0-2.4-1.2l-1.8 1.35h.9L13.461.7c-.8-.6-1.9-.6-2.7 0l-2.1 1.575h.9l-1.8-1.35a1.5 1.5 0 0 0-2.4 1.2v4.5zm1.5 0v-4.5l1.8 1.35c.267.2.633.2.9 0l2.1-1.575a.75.75 0 0 1 .9 0l2.1 1.575c.267.2.633.2.9 0l1.8-1.35V6.37a5.428 5.428 0 0 1-4.754 5.486 5.25 5.25 0 0 1-5.746-5.23zm4.5 6v10.5a.75.75 0 0 0 1.5 0v-10.5a.75.75 0 0 0-1.5 0zm-5.359 3.811c1.473.285 2.458 1.077 2.374 1.51-.084.432-1.292.801-2.765.516-1.473-.284-2.458-1.076-2.374-1.51.084-.432 1.292-.8 2.765-.516zm.285-1.473c-2.179-.42-4.233.206-4.523 1.705-.29 1.5 1.383 2.846 3.562 3.267 2.179.421 4.233-.205 4.523-1.705.29-1.5-1.383-2.846-3.562-3.267zm14.699 2.09c.084.434-.9 1.226-2.374 1.51-1.473.285-2.681-.084-2.765-.516-.084-.433.9-1.226 2.374-1.51 1.473-.285 2.681.084 2.765.517zm1.473-.284c-.29-1.5-2.344-2.126-4.523-1.705-2.178.421-3.851 1.767-3.562 3.267.29 1.5 2.344 2.126 4.523 1.705 2.179-.42 3.852-1.767 3.562-3.267z">
+                  </path>
+                </svg>
+              </span>
+            </div>
+            <div class="a53cbfa6de ebbf62ced0">Garden</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3  d-flex justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa"><span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M2.75 6h9.5a.25.25 0 0 1-.25-.25v17.5l.75-.75H2.25l.75.75V5.75a.25.25 0 0 1-.25.25zm0-1.5c-.69 0-1.25.56-1.25 1.25v17.5c0 .414.336.75.75.75h10.5a.75.75 0 0 0 .75-.75V5.75c0-.69-.56-1.25-1.25-1.25h-9.5zm3-1.5h3.5A.25.25 0 0 1 9 2.75v2.5l.75-.75h-4.5l.75.75v-2.5a.25.25 0 0 1-.25.25zm0-1.5c-.69 0-1.25.56-1.25 1.25v2.5c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-2.5c0-.69-.56-1.25-1.25-1.25h-3.5zM5.25 9h4.5a.75.75 0 0 0 0-1.5h-4.5a.75.75 0 0 0 0 1.5zm0 3h4.5a.75.75 0 0 0 0-1.5h-4.5a.75.75 0 0 0 0 1.5zm0 3h4.5a.75.75 0 0 0 0-1.5h-4.5a.75.75 0 0 0 0 1.5zm0 3h4.5a.75.75 0 0 0 0-1.5h-4.5a.75.75 0 0 0 0 1.5zm0 3h4.5a.75.75 0 0 0 0-1.5h-4.5a.75.75 0 0 0 0 1.5zM7.5.75v1.5a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-1.5 0zM15.75 24h6a.75.75 0 0 0 .75-.75V10.5A1.5 1.5 0 0 0 21 9h-4.5a1.5 1.5 0 0 0-1.5 1.5v12.75a.75.75 0 0 0 1.5 0V10.5H21v12.75l.75-.75h-6a.75.75 0 0 0 0 1.5zM19.5 8.25v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0zM.75 24h22.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0 0 1.5z">
+                  </path>
+                </svg></span></div>
+          </div>
+          <div class="c624d7469d a0e60936ad a3214e5942" style="--bui_stack_spaced_gap--s: 0;">
+            <div class="a53cbfa6de ebbf62ced0">City View</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 col-3  d-flex justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa"><span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M16.01 15a4.5 4.5 0 1 0-9 0l.75-.75a3.75 3.75 0 1 0 0 7.5 4.96 4.96 0 0 0 2.245-.59 3.277 3.277 0 0 1 3.018.005c.677.365 1.44.567 2.22.585a3.75 3.75 0 1 0 .018-7.5l.749.75zm-1.5 0c0 .414.336.75.75.75a2.25 2.25 0 0 1 0 4.5 3.435 3.435 0 0 1-1.536-.41 4.786 4.786 0 0 0-4.42-.005 3.457 3.457 0 0 1-1.562.415A2.247 2.247 0 0 1 5.51 18a2.25 2.25 0 0 1 2.25-2.25.75.75 0 0 0 .75-.75 3 3 0 1 1 6 0zm-9.75-3.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm3-6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm3.75 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0z">
+                  </path>
+                </svg></span></div>
+          </div>
+          <div class="c624d7469d a0e60936ad a3214e5942" style="--bui_stack_spaced_gap--s: 0;">
+            <div class="a53cbfa6de ebbf62ced0">Pets Allowed</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 col-3  d-flex justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa"><span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M23.097 21.71c-.896.187-1.71-.114-2.442-.76a4.629 4.629 0 0 1-.74-.837.75.75 0 0 0-1.272-.004 3.557 3.557 0 0 1-2.925 1.661 2.98 2.98 0 0 1-2.559-1.608.75.75 0 0 0-1.26-.11 4.418 4.418 0 0 1-3.286 1.719c-1.121-.058-2.216-.68-2.876-1.677a.75.75 0 0 0-1.214-.05 6.17 6.17 0 0 1-1.125 1.033c-.833.588-1.677.85-2.49.675a.75.75 0 1 0-.315 1.466c1.285.276 2.526-.107 3.67-.915a7.084 7.084 0 0 0 1.438-1.33l-1.214-.05a5.257 5.257 0 0 0 4.126 2.346c1.807-.084 3.417-.926 4.476-2.303l-1.26-.11a4.49 4.49 0 0 0 3.892 2.414 5.07 5.07 0 0 0 4.192-2.361l-1.272-.004c.192.308.533.739 1.022 1.17 1.057.931 2.32 1.4 3.74 1.104a.75.75 0 0 0-.306-1.468zm0-4.5c-.896.187-1.71-.114-2.442-.76a4.629 4.629 0 0 1-.74-.837.75.75 0 0 0-1.272-.004 3.557 3.557 0 0 1-2.925 1.661 2.98 2.98 0 0 1-2.559-1.608.75.75 0 0 0-1.26-.11 4.418 4.418 0 0 1-3.286 1.719c-1.121-.058-2.216-.68-2.876-1.677a.75.75 0 0 0-1.214-.05 6.17 6.17 0 0 1-1.125 1.033c-.833.588-1.677.85-2.49.675a.75.75 0 1 0-.315 1.466c1.285.276 2.526-.107 3.67-.915a7.084 7.084 0 0 0 1.438-1.33l-1.214-.05a5.257 5.257 0 0 0 4.126 2.346c1.807-.084 3.417-.926 4.476-2.303l-1.26-.11a4.49 4.49 0 0 0 3.892 2.414 5.07 5.07 0 0 0 4.192-2.361l-1.272-.004c.192.308.533.739 1.022 1.17 1.057.931 2.32 1.4 3.74 1.104a.75.75 0 0 0-.306-1.468zm-1.722-8.64a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0zm1.5 0a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0zM7.777 14.636l3.831-2.4a.75.75 0 0 0 .166-1.13L8.964 7.9a2.25 2.25 0 0 1 .687-3.494l4.264-2.135a.751.751 0 1 1 .686 1.333l-.01.006-3.405 1.702a1.502 1.502 0 0 0-.448 2.334l5.375 6.142a.75.75 0 1 0 1.128-.988l-5.377-6.145-.002-.003v-.001l3.394-1.697.027-.013A2.25 2.25 0 0 0 13.238.93L8.98 3.065a3.749 3.749 0 0 0-1.144 5.824l2.81 3.206.166-1.13-3.831 2.4a.75.75 0 0 0 .796 1.272z">
+                  </path>
+                </svg></span></div>
+          </div>
+          <div class="c624d7469d a0e60936ad a3214e5942" style="--bui_stack_spaced_gap--s: 0;">
+            <div class="a53cbfa6de ebbf62ced0">Swimming Pool</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-3 pb-4">
+      <div class="col-3  d-flex justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa"><span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M14.25 18.75a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zm2.08-5.833a8.25 8.25 0 0 0-11.666 0 .75.75 0 0 0 1.06 1.06 6.75 6.75 0 0 1 9.546 0 .75.75 0 0 0 1.06-1.06zm3.185-3.182c-4.979-4.98-13.051-4.98-18.03 0a.75.75 0 1 0 1.06 1.06c4.394-4.393 11.516-4.393 15.91 0a.75.75 0 1 0 1.06-1.06zm2.746-3.603C17.136-.043 6.864-.043.24 6.132A.75.75 0 1 0 1.26 7.23c6.05-5.638 15.429-5.638 21.478 0a.75.75 0 0 0 1.022-1.098z">
+                  </path>
+                </svg></span></div>
+          </div>
+          <div class="c624d7469d a0e60936ad a3214e5942" style="--bui_stack_spaced_gap--s: 0;">
+            <div class="a53cbfa6de ebbf62ced0">Free WiFi</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3  d-flex justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa"><span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M11.25.75v7.5a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-1.5 0zm4.031.914l-3.75 3h.938l-3.75-3a.75.75 0 1 0-.938 1.172l3.75 3a.75.75 0 0 0 .938 0l3.75-3a.75.75 0 1 0-.938-1.172zM1.883 7.024l6.495 3.75a.75.75 0 0 0 .75-1.299l-6.495-3.75a.75.75 0 1 0-.75 1.3zM4.69 3.99l.723 4.748.468-.812-4.473 1.748a.75.75 0 0 0 .546 1.398l4.473-1.748a.75.75 0 0 0 .468-.812l-.723-4.748a.75.75 0 1 0-1.482.226zM2.632 18.274l6.495-3.75a.75.75 0 1 0-.75-1.298l-6.495 3.75a.75.75 0 1 0 .75 1.299zm-1.224-3.948l4.473 1.748-.468-.812-.723 4.748a.75.75 0 0 0 1.482.226l.723-4.748a.75.75 0 0 0-.468-.812l-4.473-1.748a.75.75 0 0 0-.546 1.398zM12.75 23.25v-7.5a.75.75 0 0 0-1.5 0v7.5a.75.75 0 0 0 1.5 0zm-4.031-.914l3.75-3h-.938l3.75 3a.75.75 0 0 0 .937-1.172l-3.75-3a.75.75 0 0 0-.937 0l-3.75 3a.75.75 0 0 0 .938 1.172zm13.399-5.36l-6.495-3.75a.75.75 0 0 0-.75 1.298l6.495 3.75a.75.75 0 0 0 .75-1.299zm-2.807 3.034l-.724-4.748-.468.812 4.473-1.748a.75.75 0 0 0-.546-1.398l-4.473 1.748a.75.75 0 0 0-.468.812l.723 4.748a.75.75 0 0 0 1.483-.226zm2.057-14.285l-6.495 3.75a.75.75 0 0 0 .75 1.3l6.495-3.75a.75.75 0 0 0-.75-1.3zm1.224 3.95l-4.473-1.749.468.812.724-4.748a.75.75 0 0 0-1.483-.226l-.723 4.748a.75.75 0 0 0 .468.812l4.473 1.748a.75.75 0 0 0 .546-1.398zM11.625 7.6L8.377 9.475a.75.75 0 0 0-.375.65v3.75a.75.75 0 0 0 .375.65l3.248 1.874a.75.75 0 0 0 .75 0l3.248-1.875a.75.75 0 0 0 .375-.649v-3.75a.75.75 0 0 0-.375-.65L12.375 7.6a.75.75 0 0 0-.75 0zm.75 1.3h-.75l3.248 1.874-.375-.649v3.75l.375-.65-3.248 1.876h.75l-3.248-1.876.375.65v-3.75l-.375.65L12.375 8.9z">
+                  </path>
+                </svg></span></div>
+          </div>
+          <div class="c624d7469d a0e60936ad a3214e5942" style="--bui_stack_spaced_gap--s: 0;">
+            <div class="a53cbfa6de ebbf62ced0">Air conditioning</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3  d-flex justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa"><span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                  <path
+                    d="M127.32 53.67l-8 11.87a2.498 2.498 0 0 1-.21.24 2.285 2.285 0 0 1-.28.34l-.22.19c-.12.112-.247.215-.38.31a.777.777 0 0 1-.2.11c-.158.1-.321.19-.49.27h-.18a3.87 3.87 0 0 1-.58.18h-.19a3.08 3.08 0 0 1-.53.06h-.26a3.608 3.608 0 0 1-.46-.05l-.34-.07-.31-.1-.35-.13-.26-.14-.36-.21-11.81-8a4 4 0 0 1 4.46-6.54l4.89 3.3C106.987 30.316 85.347 12.036 60 12h-.65c-28.719.18-51.854 23.606-51.675 52.325C7.855 93.044 31.281 116.179 60 116h.65a52.22 52.22 0 0 0 44.5-26.18 4.005 4.005 0 0 1 6.94 4A60.26 60.26 0 0 1 60.74 124H60C26.863 123.999.001 97.135.002 63.998.003 30.86 26.867 3.998 60.004 4c28.511.001 53.084 20.065 58.786 48l1.9-2.82a4.002 4.002 0 1 1 6.64 4.47zm-69.74 2.47c-.038-7.677-6.253-13.892-13.93-13.93-10.1 0-12.76 8.08-14.19 12.42l-.18.57a4 4 0 0 0 7.59 2.53l.19-.6c1.55-4.7 2.7-6.92 6.59-6.92a5.94 5.94 0 0 1 5.93 5.93 5 5 0 0 1-1.47 3.56L30.24 77.57a4 4 0 0 0 2.83 6.83h20.51a4 4 0 0 0 0-8H42.72l11.05-11.05a13 13 0 0 0 3.81-9.21zM76.93 80.4v-2.84H63.84a4 4 0 0 1-3.39-6.12l17.09-27.35a4 4 0 0 1 7.39 2.12V80.4a4 4 0 0 1-8 0zm0-10.84v-9.4l-5.87 9.4z">
+                  </path>
+                </svg></span></div>
+          </div>
+          <div class="c624d7469d a0e60936ad a3214e5942" style="--bui_stack_spaced_gap--s: 0;">
+            <div class="a53cbfa6de ebbf62ced0"> 24 hour front desk</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3  d-flex flex-wrap justify-content-center align-items-center">
+        <div class="f8d7936849 b48ab08804">
+          <div class="c23efcc66c">
+            <div class="f941f23efa"><span class="fcd9eec8fb a7be97de4b dbed623b69" aria-hidden="true"><svg
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M15.375 10.875a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0zm1.5 0a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0zm.375 12.375V18.7l-.667.745C20.748 18.98 24 15.925 24 10.5a2.25 2.25 0 0 0-4.5 0c0 1.945-.609 3.154-1.64 3.848a3.973 3.973 0 0 1-2.132.652H9a3.75 3.75 0 1 0 0 7.5h3a2.25 2.25 0 0 0 0-4.5H9a.75.75 0 0 0 0 1.5h3a.75.75 0 0 1 0 1.5H9a2.25 2.25 0 0 1 0-4.5h6.74a5.426 5.426 0 0 0 2.957-.908C20.154 14.613 21 12.932 21 10.5a.75.75 0 0 1 1.5 0c0 4.6-2.628 7.069-6.083 7.455a.75.75 0 0 0-.667.745v4.55a.75.75 0 0 0 1.5 0zm-7.5-1.5v1.5a.75.75 0 0 0 1.5 0v-1.5a.75.75 0 0 0-1.5 0zM.75 1.5h1.5l-.53-.22 1.402 1.402a.75.75 0 0 0 1.06-1.06L2.78.22A.75.75 0 0 0 2.25 0H.75a.75.75 0 1 0 0 1.5zm2.983 3.754a.01.01 0 0 1 .016.002c-.542-1.072-.1-2.426 1.008-2.988a2.25 2.25 0 0 1 2.037 0c-.041-.022-.043-.029-.04-.034l.002-.002-3.013 3.012zm1.07 1.05l3.002-3A1.489 1.489 0 0 0 7.51.951 3.766 3.766 0 0 0 4.079.929 3.75 3.75 0 0 0 2.43 5.971a1.49 1.49 0 0 0 2.382.323zm3.408-.968l1.116.62a.75.75 0 1 0 .728-1.312l-1.116-.62a.75.75 0 1 0-.728 1.312zm1.964-2.233l1.615.44a.75.75 0 1 0 .394-1.448l-1.615-.44a.75.75 0 1 0-.394 1.448zm4.217 1.15l1.615.44a.75.75 0 0 0 .396-1.447l-1.615-.44a.75.75 0 0 0-.396 1.447zM5.697 7.388l.577 1.038a.75.75 0 1 0 1.312-.728L7.009 6.66a.75.75 0 1 0-1.312.728zM3.284 8.94l.44 1.615a.75.75 0 1 0 1.448-.394l-.44-1.615a.75.75 0 1 0-1.448.394zm1.15 4.219l.246.896a.75.75 0 1 0 1.446-.396l-.245-.896a.75.75 0 1 0-1.446.396z">
+                  </path>
+                </svg></span></div>
+          </div>
+          <div class="c624d7469d a0e60936ad a3214e5942" style="--bui_stack_spaced_gap--s: 0;">
+            <div class="a53cbfa6de ebbf62ced0">Clean bathroom</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section bg-light ftco-no-pb ">
+    <div class="container-fluid px-0">
+      <div class="row">
+        <div class="col-sm-3 "
+          style="background-image: url('images/room-1.jpg'); min-height: 300px; background-size: cover;">
+        </div>
+        <div class="col-sm-3" style="min-height: 300px; transition: all 0.3s;">
+          <div class="text p-4 p-xl-5 text-center" style="transition: all 0.3s;">
+            <p><i class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i> <i
+                class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i></p>
+            <p class="mb-0 text-color"><span style="font-size: 22px;"><i
+                  class="bi bi-currency-rupee text-color"></i>1200.00</span> <span class="per">per night</span></p>
+            <h3 class="mb-3 text-color">Suite Room</h3>
+            <p class="pt-1 text-color"><a href="blog-single.html" class="btn-custom px-3 py-2 text-color">View Room
+                Details <i class="bi bi-forward-fill"></i><span class="icon-long-arrow-right"></span></a></p>
+          </div>
+        </div>
+        <div class="col-sm-3 "
+          style="min-height: 300px; background-image: url('images/room-5.jpg'); background-size: cover;"></div>
+        <div class="col-sm-3" style="min-height: 300px; transition: all 0.3s;">
+          <div class="text p-4 p-xl-5 text-center" style="transition: all 0.3s;">
+            <p><i class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i> <i
+                class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i></p>
+            <p class="mb-0 text-color"><span style="font-size: 22px; "><i
+                  class="bi bi-currency-rupee text-color"></i>1200.00</span> <span class="per">per night</span></p>
+            <h3 class="mb-3 text-color">Classic Room</h3>
+            <p class="pt-1 text-color"><a href="blog-single.html" class="btn-custom px-3 py-2 text-color">View Room
+                Details <i class="bi bi-forward-fill"></i><span class="icon-long-arrow-right"></span></a></p>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-sm-3" style="min-height: 300px;">
+          <div class="text p-4 p-xl-5 text-center" style="transition: all 0.3s;">
+            <p><i class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i> <i
+                class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i></p>
+            <p class="mb-0 text-color"><span style="font-size: 22px; "><i
+                  class="bi bi-currency-rupee text-color"></i>1200.00</span> <span class="per">per night</span></p>
+            <h3 class="mb-3 text-color">Family Room</h3>
+            <p class="pt-1 text-color"><a href="blog-single.html" class="btn-custom px-3 py-2 text-color">View Room
+                Details <i class="bi bi-forward-fill"></i><span class="icon-long-arrow-right"></span></a></p>
+          </div>
+        </div>
+        <div class="col-sm-3 "
+          style="min-height: 300px;background-image: url('images/room-2.jpg'); background-size:cover;">
+          <!-- Content of the second column -->
+        </div>
+        <div class="col-sm-3 " style="min-height: 300px;">
+          <div class="text p-4 p-xl-5 text-center" style="transition: all 0.3s;">
+            <p><i class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i> <i
+                class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i></p>
+            <p class="mb-0 text-color"><span style="font-size: 22px;"><i
+                  class="bi bi-currency-rupee text-color"></i>1200.00</span> <span class="per">per night</span></p>
+            <h3 class="mb-3 text-color">Deluex Room</h3>
+            <p class="pt-1 text-color"><a href="blog-single.html" class="btn-custom px-3 py-2 text-color">View Room
+                Details <i class="bi bi-forward-fill"></i><span class="icon-long-arrow-right"></span></a></p>
+          </div>
+        </div>
+        <div class="col-sm-3 "
+          style="min-height: 300px;background-image: url('images/room-3.jpg'); background-size: cover;">
+          <!-- Content of the fourth column -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"
+          style="min-height: 300px;background-image: url('images/room-4.jpg'); background-size: cover;">
+
+        </div>
+        <div class="col-sm-3 " style="min-height: 300px;">
+          <div class="text p-4 p-xl-5 text-center" style="transition: all 0.3s;">
+            <p><i class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i> <i
+                class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i></p>
+            <p class="mb-0 text-color"><span style="font-size: 22px; "><i
+                  class="bi bi-currency-rupee text-color"></i>1200.00</span> <span class="per">per night</span></p>
+            <h3 class="mb-3 text-color">Luxury Room</h3>
+            <p class="pt-1 text-color"><a href="blog-single.html" class="btn-custom px-3 py-2 text-color">View Room
+                Details <i class="bi bi-forward-fill"></i><span class="icon-long-arrow-right"></span></a></p>
+          </div>
+        </div>
+        <div class="col-sm-3 "
+          style="min-height: 300px;background-image: url('images/room-6.jpg'); background-size: cover;">
+          <!-- Content of the third column -->
+        </div>
+        <div class="col-sm-3 " style="min-height: 300px;">
+          <div class="text p-4 p-xl-5 text-center" style="transition: all 0.3s;">
+            <p><i class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i> <i
+                class="bi bi-star-fill text-color"></i> <i class="bi bi-star-fill text-color"></i></p>
+            <p class="mb-0 text-color"><span style="font-size: 22px;"><i
+                  class="bi bi-currency-rupee text-color"></i>1200.00</span> <span class="per">per night</span></p>
+            <h3 class="mb-3 text-color">Superior Room</h3>
+            <p class="pt-1 text-color"><a href="blog-single.html" class="btn-custom px-3 py-2 text-color">View Room
+                Details <i class="bi bi-forward-fill"></i><span class="icon-long-arrow-right"></span></a></p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+  <footer class="ftco-footer bg-bottom ftco-no-pt" style="margin-bottom: -80px;">
+    
+    <div class="container">
+    
+    <div class="container-fluid px-0 pt-3">
+      <div class="row no-gutters justify-content-center ">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <span class="subheading">TravelBuddy</span>
+          <h2 class="mb-4"> Our Facilities</h2>
+        </div>
+      </div>
+    </div>
+
+      <div class="row ">
+        <div class="col-md ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M16.5 6a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0zM18 6A6 6 0 1 0 6 6a6 6 0 0 0 12 0zM3 23.25a9 9 0 1 1 18 0 .75.75 0 0 0 1.5 0c0-5.799-4.701-10.5-10.5-10.5S1.5 17.451 1.5 23.25a.75.75 0 0 0 1.5 0z">
+                </path>
+              </svg>
+              &nbsp;Relevant for your trip</h2>
+            <ol class="list-tick">
+              <li>Restaurant</li>
+              <li>Private bathroom</li>
+              <li>Parking</li>
+              <li>Air conditioning</li>
+              <li>Free WiFi</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M12.75 15h10.5l-.74-.873-.664 3.986a5.25 5.25 0 0 1-5.179 4.387H7.333a5.25 5.25 0 0 1-5.18-4.387l-.663-3.986L.75 15h4.5a.75.75 0 0 0 0-1.5H.75a.75.75 0 0 0-.74.873l.664 3.986A6.75 6.75 0 0 0 7.334 24h9.333a6.75 6.75 0 0 0 6.659-5.64l.664-3.987a.75.75 0 0 0-.74-.873h-10.5a.75.75 0 0 0 0 1.5zM12 19.5H6v-5.25a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 .75.75v5.25zm0 1.5a1.5 1.5 0 0 0 1.5-1.5v-5.25A2.25 2.25 0 0 0 11.25 12h-4.5a2.25 2.25 0 0 0-2.25 2.25v5.25A1.5 1.5 0 0 0 6 21h6zm4.5-17.25a2.25 2.25 0 0 1 4.5 0v10.5a.75.75 0 0 0 1.5 0V3.75a3.75 3.75 0 1 0-7.5 0 .75.75 0 0 0 1.5 0zm-3 3a2.25 2.25 0 0 1 4.5 0l.75-.75h-6l.75.75zm-1.5 0c0 .414.336.75.75.75h6a.75.75 0 0 0 .75-.75 3.75 3.75 0 1 0-7.5 0z">
+                </path>
+              </svg> &nbsp;Bathroom</h2>
+            <ol class="list-tick">
+              <li>Toilet paper</li>
+              <li>Bidet</li>
+              <li>Bath or shower</li>
+              <li>Private bathroom</li>
+              <li>Toilet</li>
+              <li>Shower</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M2.75 12h18.5c.69 0 1.25.56 1.25 1.25V18l.75-.75H.75l.75.75v-4.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 13.25V18c0 .414.336.75.75.75h22.5A.75.75 0 0 0 24 18v-4.75a2.75 2.75 0 0 0-2.75-2.75H2.75zM0 18v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 0 18zm22.5 0v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm-.75-6.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 2.25 4.5v6.75a.75.75 0 0 0 1.5 0V4.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 0 1.5 0zm-13.25-3h7a.25.25 0 0 1 .25.25v2.75l.75-.75h-9l.75.75V8.5a.25.25 0 0 1 .25-.25zm0-1.5A1.75 1.75 0 0 0 6.75 8.5v2.75c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75V8.5a1.75 1.75 0 0 0-1.75-1.75h-7z">
+                </path>
+              </svg> &nbsp;Bedroom</h2>
+            <ol class="list-tick">
+              <li>Linen</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M5.361 6.625a6.75 6.75 0 0 0 7.413 6.721 6.93 6.93 0 0 0 6.087-6.988V2.125a1.5 1.5 0 0 0-2.4-1.2l-1.8 1.35h.9L13.461.7c-.8-.6-1.9-.6-2.7 0l-2.1 1.575h.9l-1.8-1.35a1.5 1.5 0 0 0-2.4 1.2v4.5zm1.5 0v-4.5l1.8 1.35c.267.2.633.2.9 0l2.1-1.575a.75.75 0 0 1 .9 0l2.1 1.575c.267.2.633.2.9 0l1.8-1.35V6.37a5.428 5.428 0 0 1-4.754 5.486 5.25 5.25 0 0 1-5.746-5.23zm4.5 6v10.5a.75.75 0 0 0 1.5 0v-10.5a.75.75 0 0 0-1.5 0zm-5.359 3.811c1.473.285 2.458 1.077 2.374 1.51-.084.432-1.292.801-2.765.516-1.473-.284-2.458-1.076-2.374-1.51.084-.432 1.292-.8 2.765-.516zm.285-1.473c-2.179-.42-4.233.206-4.523 1.705-.29 1.5 1.383 2.846 3.562 3.267 2.179.421 4.233-.205 4.523-1.705.29-1.5-1.383-2.846-3.562-3.267zm14.699 2.09c.084.434-.9 1.226-2.374 1.51-1.473.285-2.681-.084-2.765-.516-.084-.433.9-1.226 2.374-1.51 1.473-.285 2.681.084 2.765.517zm1.473-.284c-.29-1.5-2.344-2.126-4.523-1.705-2.178.421-3.851 1.767-3.562 3.267.29 1.5 2.344 2.126 4.523 1.705 2.179-.42 3.852-1.767 3.562-3.267z">
+                </path>
+              </svg> &nbsp;Outdoors</h2>
+            <ol class="list-tick">
+              <li>Garden</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M9 16.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zM12 15h8.5c.69 0 1.25.56 1.25 1.25v2.5l.75-.75H12l.75.75v-4.5L12 15zm0-1.5a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75h10.5a.75.75 0 0 0 .75-.75v-2.5a2.75 2.75 0 0 0-2.75-2.75H12zm-10.5 6h21l-.75-.75v3l.75-.75h-21l.75.75v-3l-.75.75zm0-1.5a.75.75 0 0 0-.75.75v3c0 .414.336.75.75.75h21a.75.75 0 0 0 .75-.75v-3a.75.75 0 0 0-.75-.75h-21zm.75 5.25v-9a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0zm21 0v-1.5a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0zM19.4 6.001L19.403 6H15.1v.001l.562-4.5V1.5h3.176L19.4 6zm1.49-.187l-.564-4.5A1.5 1.5 0 0 0 18.838 0h-3.176a1.5 1.5 0 0 0-1.488 1.314l-.563 4.5A1.499 1.499 0 0 0 15.102 7.5H19.4a1.499 1.499 0 0 0 1.49-1.687zm-4.39.936v4.5a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-1.5 0z">
+                </path>
+              </svg> &nbsp;Room Amenities</h2>
+            <ol class="list-tick">
+              <li>Socket near the bed</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M16.01 15a4.5 4.5 0 1 0-9 0l.75-.75a3.75 3.75 0 1 0 0 7.5 4.96 4.96 0 0 0 2.245-.59 3.277 3.277 0 0 1 3.018.005c.677.365 1.44.567 2.22.585a3.75 3.75 0 1 0 .018-7.5l.749.75zm-1.5 0c0 .414.336.75.75.75a2.25 2.25 0 0 1 0 4.5 3.435 3.435 0 0 1-1.536-.41 4.786 4.786 0 0 0-4.42-.005 3.457 3.457 0 0 1-1.562.415A2.247 2.247 0 0 1 5.51 18a2.25 2.25 0 0 1 2.25-2.25.75.75 0 0 0 .75-.75 3 3 0 1 1 6 0zm-9.75-3.75a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm3-6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm6 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0zm3.75 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm1.5 0a3 3 0 1 0-6 0 3 3 0 0 0 6 0z">
+                </path>
+              </svg> &nbsp;Pets</h2>
+            <ol class="list-tick">
+              <li>
+                Pets are allowed. Charges may be applicable.</li>
+            </ol>
+          </div>
+
+        </div>
+        <div class="col-md ">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M5.999.75v22.5a.75.75 0 0 0 1.5 0V.75a.75.75 0 0 0-1.5 0zm3 0V7.5a2.259 2.259 0 0 1-2.252 2.25 2.258 2.258 0 0 1-2.248-2.252V.75a.75.75 0 0 0-1.5 0V7.5a3.76 3.76 0 0 0 3.748 3.75 3.76 3.76 0 0 0 3.752-3.748V.75a.75.75 0 0 0-1.5 0zm6.75 15.75h3c1.183.046 2.203-.9 2.25-2.111a2.22 2.22 0 0 0 0-.168c-.25-6.672-.828-9.78-3.231-13.533a1.508 1.508 0 0 0-2.77.81V23.25a.75.75 0 0 0 1.5 0V1.503c0 .003.001 0 .003 0a.006.006 0 0 1 .008.002c2.21 3.45 2.75 6.354 2.99 12.773v.053a.696.696 0 0 1-.721.67L15.749 15a.75.75 0 0 0 0 1.5z">
+                </path>
+              </svg> &nbsp;Food & Drink</h2>
+            <ol class="list-tick">
+              <li>Fruits</li>
+              <li>Wine/champagne <span style="background-color: rgb(246, 239, 239);">Additional Charge</span></li>
+              <li>Kid-friendly buffet<span style="background-color: rgb(246, 239, 239);">Additional Charge</span></li>
+
+              <li>Special diet menus<span style="background-color: rgb(246, 239, 239);">Additional Charge</span></li>
+              <li>Bar</li>
+              <li>Restaurant</li>
+              <li>Tea/Coffee maker</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M14.25 18.75a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0zm1.5 0a3.75 3.75 0 1 0-7.5 0 3.75 3.75 0 0 0 7.5 0zm2.08-5.833a8.25 8.25 0 0 0-11.666 0 .75.75 0 0 0 1.06 1.06 6.75 6.75 0 0 1 9.546 0 .75.75 0 0 0 1.06-1.06zm3.185-3.182c-4.979-4.98-13.051-4.98-18.03 0a.75.75 0 1 0 1.06 1.06c4.394-4.393 11.516-4.393 15.91 0a.75.75 0 1 0 1.06-1.06zm2.746-3.603C17.136-.043 6.864-.043.24 6.132A.75.75 0 1 0 1.26 7.23c6.05-5.638 15.429-5.638 21.478 0a.75.75 0 0 0 1.022-1.098z">
+                </path>
+              </svg> &nbsp;Internet</h2>
+            <ol class="list-tick">
+              <li>WiFi is available in all areas</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M14.244 14.156a6.75 6.75 0 0 0-6.75-5.906A6.747 6.747 0 0 0 .73 14.397a.75.75 0 0 0 1.494.134 5.25 5.25 0 0 1 5.27-4.781 5.253 5.253 0 0 1 5.262 4.594.75.75 0 1 0 1.488-.188zM10.125 4.125a2.625 2.625 0 1 1-5.25 0V1.5h5.25v2.625zm1.5 0V1.5a1.5 1.5 0 0 0-1.5-1.5h-5.25a1.5 1.5 0 0 0-1.5 1.5v2.625a4.125 4.125 0 0 0 8.25 0zM23.25 22.5H.75l.75.75v-7.5a.75.75 0 0 1 .75-.75h19.5a.75.75 0 0 1 .75.75v7.5l.75-.75zm0 1.5a.75.75 0 0 0 .75-.75v-7.5a2.25 2.25 0 0 0-2.25-2.25H2.25A2.25 2.25 0 0 0 0 15.75v7.5c0 .414.336.75.75.75h22.5zM4.376 5.017a9.42 9.42 0 0 1 3.12-.517 9.428 9.428 0 0 1 3.133.519.75.75 0 0 0 .49-1.418A10.917 10.917 0 0 0 7.498 3a10.91 10.91 0 0 0-3.611.6.75.75 0 0 0 .49 1.417zM15.75 14.27a3.001 3.001 0 0 1 6 .16.75.75 0 1 0 1.5.04 4.501 4.501 0 1 0-9-.24.75.75 0 1 0 1.5.04zm3.75-3.77V8.25a.75.75 0 0 0-1.5 0v2.25a.75.75 0 0 0 1.5 0zM17.25 9h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 0 0 1.5z">
+                </path>
+              </svg>
+              &nbsp; Reception services</h2>
+            <ol class="list-tick">
+              <li>Invoice provided</li>
+              <li>Concierge service</li>
+              <li>ATM/cash machine on site</li>
+              <li>Luggage storage</li>
+              <li>Tour desk</li>
+              <li>Currency exchange</li>
+              <li>24-hour front desk</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M21 12v9.75a.75.75 0 0 1-.75.75H3.75a.75.75 0 0 1-.75-.75V2.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 .75.75V12zm1.5 0V2.25A2.25 2.25 0 0 0 20.25 0H3.75A2.25 2.25 0 0 0 1.5 2.25v19.5A2.25 2.25 0 0 0 3.75 24h16.5a2.25 2.25 0 0 0 2.25-2.25V12zM5.25 4.5h3a.75.75 0 0 0 0-1.5h-3a.75.75 0 0 0 0 1.5zm-3 3h19.5a.75.75 0 0 0 0-1.5H2.25a.75.75 0 0 0 0 1.5zM16.5 15a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0zm1.5 0a6 6 0 1 0-12 0 6 6 0 0 0 12 0zm0-10.875a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5zm-4.5 0a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5 1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5zM10.5 15a1.5 1.5 0 0 1 1.5-1.5.75.75 0 0 0 0-1.5 3 3 0 0 0-3 3 .75.75 0 0 0 1.5 0z">
+                </path>
+              </svg> &nbsp;Cleaning services</h2>
+            <ol class="list-tick">
+              <li>Daily housekeeping</li>
+              <li>Ironing service</li>
+              <li>Dry cleaning <span style="background-color: rgb(246, 239, 239);">Additional Charge</span></li>
+              <li>Laundry <span style="background-color: rgb(246, 239, 239);">Additional Charge</span></li>
+            </ol>
+          </div>
+
+        </div>
+        <div class="col-md  ml-5">
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M19.5 16.5v5.25a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75v-10.5a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 .75.75v5.25zm1.5 0v-5.25A2.25 2.25 0 0 0 18.75 9H5.25A2.25 2.25 0 0 0 3 11.25v10.5A2.25 2.25 0 0 0 5.25 24h13.5A2.25 2.25 0 0 0 21 21.75V16.5zM7.5 9.75V6a4.5 4.5 0 0 1 9 0v3.75a.75.75 0 0 0 1.5 0V6A6 6 0 0 0 6 6v3.75a.75.75 0 0 0 1.5 0zM12 15a1.125 1.125 0 1 0 .004 0h-.006a.75.75 0 0 0 .004 1.5H12a.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5z">
+                </path>
+              </svg> &nbsp;Safety & security</h2>
+            <ol class="list-tick">
+              <li>Fire extinguishers</li>
+              <li>CCTV outside property</li>
+              <li>CCTV in common areas</li>
+              <li>Smoke alarms</li>
+              <li>Security alarm</li>
+              <li>Key card access</li>
+
+              <li>24-hour security</li>
+              <li>Safety deposit box</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M11.72 14.295A7.35 7.35 0 0 1 8.997 8.85a7.148 7.148 0 0 1 2.25-4.972c.005-.005-.004-.005-.01-.01a7.173 7.173 0 0 1 2.261 5.03 7.332 7.332 0 0 1-2.722 5.397h.944zm-.944 1.166a.75.75 0 0 0 .944 0 8.85 8.85 0 0 0 3.277-6.555 8.683 8.683 0 0 0-2.72-6.12 1.482 1.482 0 0 0-2.069.01 8.658 8.658 0 0 0-2.71 6.062 8.869 8.869 0 0 0 3.278 6.603zm3.813-7.013A7.807 7.807 0 0 1 19.023 7.1l.003-.001a7.17 7.17 0 0 1-1.959 5.142 7.332 7.332 0 0 1-5.74 1.891.75.75 0 0 0-.158 1.492 8.85 8.85 0 0 0 6.953-2.318 8.68 8.68 0 0 0 2.404-6.233A1.495 1.495 0 0 0 19.029 5.6a9.304 9.304 0 0 0-5.282 1.608.75.75 0 1 0 .842 1.24zM8.75 7.221A9.239 9.239 0 0 0 3.417 5.6c-.815-.001-1.484.664-1.49 1.488a8.652 8.652 0 0 0 2.37 6.184 8.95 8.95 0 0 0 7.031 2.35.75.75 0 1 0-.158-1.49 7.431 7.431 0 0 1-5.82-1.927 7.142 7.142 0 0 1-1.923-5.091L3.426 7.1a7.746 7.746 0 0 1 4.476 1.357.75.75 0 0 0 .848-1.236zm-4.944 3.966c-2.223.948-3.808 2.716-3.808 4.441 0 3.47 5.422 6 12 6a22.404 22.404 0 0 0 6.977-1.047.75.75 0 0 0 .523-.715v-3.488l-.75.75h4.383a.75.75 0 0 0 .715-.524c.1-.315.15-.643.152-.973 0-2.068-1.986-3.858-5.079-4.944a.75.75 0 1 0-.497 1.416c2.56.898 4.076 2.265 4.076 3.525 0 .176-.028.354-.082.524l.715.226v-.75h-4.383a.75.75 0 0 0-.75.75v3.488l.523-.715a20.922 20.922 0 0 1-6.516.977c-5.856 0-10.507-2.17-10.507-4.5 0-1.02 1.17-2.325 2.896-3.061a.75.75 0 0 0-.588-1.38z">
+                </path>
+              </svg> &nbsp;Wellness</h2>
+            <ol class="list-tick">
+              <li>Fitness Center</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M13.125 3.56a1.875 1.875 0 1 1-3.75 0 1.875 1.875 0 0 1 3.75 0zm1.5 0a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0zm3.454 18.335l-1.836-3.67a.75.75 0 0 0-.671-.415H11.25a.75.75 0 0 1-.75-.75v-7.5a.75.75 0 0 1 1.5 0v6c0 .414.336.75.75.75h3.75a.75.75 0 0 1 .671.415l2.25 4.5a.75.75 0 0 1-1.342.67zm-1.342.671a2.25 2.25 0 1 0 4.026-2.012l-2.25-4.5A2.25 2.25 0 0 0 16.5 14.81h-3.75l.75.75v-6a2.25 2.25 0 0 0-4.5 0v7.5a2.25 2.25 0 0 0 2.25 2.25h4.322l-.67-.415 1.835 3.672zm-4.362-.958a5.25 5.25 0 0 1-5.25-9.096.75.75 0 1 0-.75-1.299 6.75 6.75 0 1 0 6.75 11.694.75.75 0 1 0-.75-1.3z">
+                </path>
+              </svg> &nbsp;Accessibility</h2>
+            <ol class="list-tick">
+              <li>Wheelchair accessible</li>
+              <li>Upper floors accessible by elevator</li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M9.75 12.75H1.728a.228.228 0 0 1-.228-.228V6.456c0-.666.54-1.206 1.206-1.206h18.587c.666 0 1.207.54 1.207 1.206v6.066a.228.228 0 0 1-.228.228H14.25a.75.75 0 0 0 0 1.5h8.022c.954 0 1.728-.774 1.728-1.728V6.456a2.707 2.707 0 0 0-2.707-2.706H2.706A2.706 2.706 0 0 0 0 6.456v6.066c0 .954.774 1.728 1.728 1.728H9.75a.75.75 0 0 0 0-1.5zm6.75-9h-9l.75.75v-.938c.04-1.166 1.036-2.1 2.227-2.062H13.5a2.166 2.166 0 0 1 2.25 2.087V4.5l.75-.75zm0 1.5a.75.75 0 0 0 .75-.75v-.938A3.665 3.665 0 0 0 13.476 0H10.5C8.506-.062 6.818 1.52 6.75 3.537V4.5c0 .414.336.75.75.75h9zm-6 4.5a1.5 1.5 0 0 0-1.5 1.5v2.25a3 3 0 1 0 6 0v-2.25a1.5 1.5 0 0 0-1.5-1.5h-3zm0 1.5h3v2.25a1.5 1.5 0 0 1-3 0v-2.25zm10.509 2.364l1.234 8.022a.75.75 0 0 1-.742.864H2.5a.75.75 0 0 1-.74-.864l1.231-8.022a.75.75 0 1 0-1.482-.228L.277 21.408A2.248 2.248 0 0 0 2.5 24h19a2.25 2.25 0 0 0 2.225-2.592l-1.234-8.022a.75.75 0 0 0-1.482.228z">
+                </path>
+              </svg> &nbsp;Business facilities</h2>
+            <ol class="list-tick">
+              <li>Fax/photocopying</li>
+              <li>Business centre <span style="background-color: rgb(246, 239, 239);">Additional Charge</span></li>
+              <li>Meeting/banquet facilities <span style="background-color: rgb(246, 239, 239);">Additional
+                  Charge</span></li>
+            </ol>
+          </div>
+          <div class="ftco-footer-widget ">
+            <h2 class="ftco-heading-2" style="margin-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" width="20" height="20">
+                <path
+                  d="M24 13.5a6 6 0 0 0-6-6h-3a6 6 0 0 0 0 12h.75l-.53-.22 4.5 4.5a.75.75 0 0 0 1.28-.53v-5.024l-.43.678A5.989 5.989 0 0 0 24 13.502zm-1.5-.002a4.489 4.489 0 0 1-2.57 4.05.75.75 0 0 0-.43.678v5.024l1.28-.53-4.5-4.5a.75.75 0 0 0-.53-.22H15a4.5 4.5 0 1 1 0-9h3a4.5 4.5 0 0 1 4.5 4.5zM6.22 12.22l-3 3 1.28.53v-5.024a.75.75 0 0 0-.43-.678A4.489 4.489 0 0 1 5.998 1.5H9a4.502 4.502 0 0 1 4.313 3.214.75.75 0 0 0 1.438-.428A6.002 6.002 0 0 0 9 0H6a5.988 5.988 0 0 0-2.57 11.404L3 10.726v5.024a.75.75 0 0 0 1.28.53l3-3a.75.75 0 1 0-1.06-1.06z">
+                </path>
+              </svg> &nbsp;Languages Spoken</h2>
+            <ol class="list-tick">
+              <li>English</li>
+              <li>Hindi</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-right">
+          <div class="a53cbfa6de">Missing some information? <a href="#" class="mr-2">Yes /</a><a href="#">No</a></div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <section class="ftco-section ftco-menu" style="background-image: url(images/restaurant-pattern.jpg);">
+    <div class="container">
+      <div class="row justify-content-center mb-2 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <span class="subheading">TravelBuddy</span>
+          <h2>Restaurant</h2>
+        </div>
+      </div>
+      <div class="container text-center ">
+        <div class="row">
+
+          <div class="col m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col-9">
+                <div class="desc text-md-right">
+                  <div class="d-md-flex text align-items-right ">
+                    <h4 class="order-md-last heading-right ml-5 mt-1"><span
+                        style="color: rgb(78, 176, 37); margin-left: 50px;">Midnight Delight</span></h4>
+                    <span class="price price-left mr-5 pt-1"><i class="bi bi-currency-rupee"></i>120</span>
+                  </div>
+                  <div class="d-block mr-1 ">
+                    <p style="color: black;">A sweet escape into the dark! Experience the rich and decadent flavor of
+                      this black cake</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <img src="images/img/menu-1.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+            </div>
+          </div>
+
+          <div class="col m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col text-center">
+                <img src="images/img/menu-5.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+              <div class="col-9">
+                <div class="desc text-md-left">
+                  <div class="d-md-flex text align-items-left ">
+                    <div class="d-md-flex text align-items-left mt-1">
+                      <h4><span style="color:  rgb(78, 176, 37);">Ocean’s Bounty</span></h4>
+                      <span class="price " style="margin-left: 160px;"><i class="bi bi-currency-rupee"></i>249</span>
+                    </div>
+                  </div>
+                  <div class="d-block mr-1 ">
+                    <p style="color: black;">Freshness in every bite! Tender and juicy grilled fish side of crisp &
+                      colorful veges</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col-9">
+                <div class="desc text-md-right">
+                  <div class="d-md-flex text align-items-right ">
+                    <h4 class="order-md-last heading-right ml-5"><span
+                        style="color: rgb(78, 176, 37); margin-left: 8px;">Tropical Indulgence</span></h4>
+                    <span class="price price-left mr-5 pt-1"><i class="bi bi-currency-rupee"></i>350</span>
+                  </div>
+                  <div class="d-block mr-1 ">
+                    <p style="color: black;">flavors ! Banana split ice cream with whipped cream, cherries, and
+                      chocolate syrup</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <img src="images/img/menu-2.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+            </div>
+          </div>
+          <div class="col m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col text-center">
+                <img src="images/img/menu-6.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+              <div class="col-9">
+                <div class="desc text-md-left">
+                  <div class="d-md-flex text align-items-left ">
+                    <div class="d-md-flex text align-items-left mt-1">
+                      <h4><span style="color:  rgb(78, 176, 37);">Garden’s Essence</span></h4>
+                      <span class="price " style="margin-left: 145px;"><i class="bi bi-currency-rupee"></i>249</span>
+                    </div>
+                  </div>
+                  <div class="d-block mr-1 ">
+                    <p style="color: black;">Nature’s goodness on a plate! Savor the taste of sautéed veges with herbs
+                      & spices</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col-9">
+                <div class="desc text-md-right">
+                  <div class="d-md-flex text align-items-right ">
+                    <h4 class="order-md-last heading-right ml-3"><span
+                        style="color: rgb(78, 176, 37); margin-left: 35px;">Berry Bliss Pancakes</span></h4>
+                    <span class="price price-left mr-5 pt-1"><i class="bi bi-currency-rupee"></i>400</span>
+                  </div>
+                  <div class="d-block mr-1 ">
+                    <p style="color: black;">Wake up to sweetness! Start your day with fluffy pancakes topped with
+                      fresh berries and syrup.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <img src="images/img/menu-3.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+            </div>
+          </div>
+          <div class="col m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col text-center">
+                <img src="images/img/menu-7.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+              <div class="col-9">
+                <div class="desc text-md-left">
+                  <div class="d-md-flex text align-items-left ">
+                    <div class="d-md-flex text align-items-left mt-1">
+                      <h4><span style="color:  rgb(78, 176, 37);">Sunset Sip</span></h4>
+                      <span class="price " style="margin-left: 210px;"><i class="bi bi-currency-rupee"></i>250</span>
+                    </div>
+                  </div>
+                  <div class="d-block mr-1 ">
+                    <p style="color: black;">Cheers to vibrant moments! Refreshing cocktail drink with a hint of
+                      citrus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col  m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col-9">
+                <div class="desc text-md-right">
+                  <div class="d-md-flex text align-items-right ">
+                    <h4 class="order-md-last heading-right ml-5"><span
+                        style="color: rgb(78, 176, 37); margin-left: 38px;">Sizzling Sensation</span></h4>
+                    <span class="price price-left mr-5 pt-1"><i class="bi bi-currency-rupee"></i>125</span>
+                  </div>
+                  <div class="d-block mr-0 ">
+                    <p style="color: black;">Indulge in rich, savory excellence! Relish the mouthwatering steak with
+                      asparagus and sauce</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col  text-center">
+                <img src="images/img/menu-4.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+            </div>
+          </div>
+          <div class="col m-2"
+            style=" box-shadow:0px 15px 24px -21px rgba(0, 0, 0, 0.21);background-color: white; border-radius: 5px;">
+            <div class="row">
+              <div class="col text-center">
+                <img src="images/img/menu-8.jpg" class="img-fluid mt-2 mx-auto d-block rounded-circle"
+                  style="width: 100px; height: 100px;" alt="Image">
+              </div>
+              <div class="col-9">
+                <div class="desc text-md-left">
+                  <div class="d-md-flex text align-items-left ">
+                    <div class="d-md-flex text align-items-left mt-1">
+                      <h4><span style="color:  rgb(78, 176, 37);">Triple Delight</span></h4>
+                      <span class="price pt-1" style="margin-left: 180px;"><i
+                          class="bi bi-currency-rupee"></i>550</span>
+                    </div>
+                  </div>
+                  <div class="d-block mr-1 ">
+                    <p style="color: black;">Symphony of flavors! Three different dessert drinks with creamy, fruity &
+                      nutty notes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <!-- /<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+---- Include the above in your HEAD tag -------- -->
+    <section class="ftco-section ftco-menu">
+      <div class="container">
+        <div role="tabpanel" class=" tab-pane " id="skill">
+          <div class="container-fluid px-0 pt-3">
+            <div class="row no-gutters justify-content-center ">
+              <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading">TravelBuddy</span>
+                <h2 class="mb-4"> Guest Reviews</h2>
+              </div>
+            </div>
+          </div>
+          <div class="score-container">
+            <div class="score-box" style="color: white;">6.8</div>
+            <div class="score-label">Peasant 8,109-Reviews</div>
+          </div>
+          <div class="col-md-7 heading-section text-left ftco-animate pt-3" style="margin-left: -15px;font-weight: bold !important; color: black;">
+            <h5 >Categories</h5>
+          </div>
+
+          <div class="skill-section">
+            <div class="row pt-2">
+
+              <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                  style="display: flex; justify-content: space-between;">
+                  <p style="margin-left: -15px;font-weight: bold; color: black;">Staff</p>
+                  <p style="margin-left: 289px;">7.7</p>
+                </div>
+
+                <div class="progress" style="margin-top: -15px;">
+                  <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 77%">
+                    <span class="skill-name"><strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                  style="display: flex; justify-content: space-between;">
+                  <p style="margin-left: -15px;font-weight: bold; color: black;">Facilities</p>
+                  <p style="margin-left: 255px;">7.0</p>
+                </div>
+
+                <div class="progress" style="margin-top: -15px;">
+                  <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 77%">
+                    <span class="skill-name"><strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                  style="display: flex; justify-content: space-between;">
+                  <p style="margin-left: -15px;font-weight: bold; color: black;">Cleanliness</p>
+                  <p style="margin-left: 230px;">7.4</p>
+                </div>
+
+                <div class="progress" style="margin-top: -15px;">
+                  <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 77%">
+                    <span class="skill-name"><strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-2 col-sm-2 col-xs-2 text-left">80%</div> -->
+            </div>
+            <div class="row pt-5">
+              <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                  style="display: flex; justify-content: space-between;">
+                  <p style="margin-left: -15px; font-weight: bold; color: black;">Comfort</p>
+                  <p style="margin-left: 257px;">6.5</p>
+                </div>
+
+                <div class="progress" style="margin-top: -15px;">
+                  <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 65%">
+                    <span class="skill-name"><strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                  style="display: flex; justify-content: space-between;">
+                  <p style="margin-left: -15px;font-weight: bold; color: black;">Price</p>
+                  <p style="margin-left: 289px;">7.7</p>
+                </div>
+
+                <div class="progress" style="margin-top: -15px;">
+                  <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 77%">
+                    <span class="skill-name"><strong></strong></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                  style="display: flex; justify-content: space-between;">
+                  <p style="margin-left: -15px;font-weight: bold; color: black;">Location</p>
+                  <p style="margin-left: 255px;">6.9</p>
+                </div>
+
+                <div class="progress" style="margin-top: -15px;">
+                  <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 69%">
+                    <span class="skill-name"><strong></strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5 pb-5">
+              <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                <div class="col-md-4 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                  style="display: flex; justify-content: space-between;">
+                  <p style="margin-left: -15px;font-weight: bold; color: black;">WiFi</p>
+                  <p style="margin-left: 293px;">7.4</p>
+                </div>
+
+                <div class="progress" style="margin-top: -15px;">
+                  <div class="progress-bar  active" role="progressbar" aria-valuenow="  45" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 74%">
+                    <span class="skill-name"><strong></strong></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="ftco-intro ftco-section ftco-no-pt">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-md-12 text-center">
+            <div class="img"
+              style="background-image: url(image/z.jpg);background-size: cover; height: 300px;">
+              <div class="overlay"></div>
+              <h1 style="color: #fff;">We Are TravelBuddy A Travel Agency</h1><br>
+              <p>We can manage your dream building A small river named Duden flows by their place</p>
+              <p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Ask For A Quote</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-image: url(images/bg_3.jpg);">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md pt-5">
+            <div class="ftco-footer-widget pt-md-5 mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+                blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md pt-5 ">
+            <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Infromation</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Online Enquiry</a></li>
+                <li><a href="#" class="py-2 d-block">General Enquiries</a></li>
+                <li><a href="#" class="py-2 d-block">Booking Conditions</a></li>
+                <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
+                <li><a href="#" class="py-2 d-block">Refund Policy</a></li>
+                <li><a href="#" class="py-2 d-block">Call Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md pt-5 ">
+            <div class="ftco-footer-widget pt-md-5 mb-4">
+              <h2 class="ftco-heading-2">Experience</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Adventure</a></li>
+                <li><a href="#" class="py-2 d-block">Hotel and Restaurant</a></li>
+                <li><a href="#" class="py-2 d-block">Beach</a></li>
+                <li><a href="#" class="py-2 d-block">Nature</a></li>
+                <li><a href="#" class="py-2 d-block">Camping</a></li>
+                <li><a href="#" class="py-2 d-block">Party</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md pt-5 ">
+            <div class="ftco-footer-widget pt-md-5 mb-4">
+              <h2 class="ftco-heading-2">Have a Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San
+                      Francisco, California, USA</span></li>
+                  <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a>
+                  </li>
+                  <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                        class="text">info@yourdomain.com</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+          stroke="#F96D00" />
+      </svg></div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script> -->
+    <script src="js/main.js"></script>
+    <!-- <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1hFyxtfEip0QRWpWz4C2CnI-V5A2xBcs&callback=initMap">
+      </script> -->
+    <!-- <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: { lat: 40.741895, lng: -73.989308 },
+          zoom: 15
+        });
+        var marker = new google.maps.Marker({
+          position: { lat: 40.741895, lng: -73.989308 },
+          map: map
+        });
+      }
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var hotelId = urlParams.get('hotelId');
+        var hotelName = urlParams.get('hotelName');
+        
+        // Use hotelId and hotelName as needed
+        console.log('Hotel ID:', hotelId);
+        console.log('Hotel Name:', hotelName);
+    });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var hotelName = urlParams.get('hotelName');
+    
+        // Set the hotel name in the title div
+        $('.title').text(hotelName);
+        $('.bread').text(hotelName);
+        $('#hotelName').text(hotelName + "'s Rooms");
+    });
+    </script>
+    
+
+</body>
+
+</html>

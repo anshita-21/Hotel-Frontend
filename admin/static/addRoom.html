@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="TravelBuddy">
+    <meta name="keywords"
+        content="TravelBuddy, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+    <link rel="canonical" href="https://demo-basic.TravelBuddy.io/ui-forms.html" />
+
+    <title>Add Hotels</title>
+    <script type="text/javascript" src="validAdmin.js"></script>
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+        label {
+            font-weight: 500;
+            padding-bottom: 2px;
+        }
+        		
+.form-control {
+    border: 1px solid #ced4da !important; 
+    border-radius: .25rem !important;
+    padding: .375rem .75rem !important;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out !important;
+}
+
+.form-control:focus {
+    border-color: #28a745 !important; 
+    outline: 0 !important; 
+    box-shadow: 0 0 0 .25rem rgba(40, 167, 69, 0.25) !important; 
+}
+.form-select {
+    border: 1px solid #ced4da !important;
+    border-radius: 4px !important;
+    padding: 6px !important;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.form-select:focus {
+    border-color: #28a745 !important;
+    outline: 0 !important; 
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important; 
+}
+label{
+	color: black !important;
+	font-weight: bold;
+}
+.col-md-3 {
+    width: 20% !important;}
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: #41b12f;
+    border-color: #203d56;
+    color: var(--bs-btn-active-color);
+}
+.btn:focus-visible {
+    background-color: #203d56;
+    border-color: #203d56;
+    box-shadow: #203d56;
+    color: var(--bs-btn-hover-color);
+    outline: 0;
+}
+
+.btn:hover {
+    background-color: #203d56;
+    border-color: #203d56;
+    color: var(--bs-btn-hover-color);
+    text-decoration: none;
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color:#203d56;
+    border-color: #203d56;
+    color: var(--bs-btn-active-color);
+}
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar" class="sidebar js-sidebar">
+            <div class="sidebar-content js-simplebar">
+                <a class="sidebar-brand" href="index.html">
+                    <span class="align-middle">TravelBuddy</span>
+                </a>
+
+                <ul class="sidebar-nav">
+                    <li class="sidebar-header">
+                        Pages
+                    </li>
+
+                    <li class="sidebar-item ">
+                        <a class="sidebar-link" href="index.html">
+                            <i class="align-middle" data-feather="sliders"></i> <span
+                                class="align-middle">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="Hotel.html">
+                            <i class="align-middle" data-feather="home"></i> <span class="align-middle">Hotel</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="room.html">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Room</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="pages-blank.html">
+                            <i class="align-middle" data-feather="bold"></i> <span class="align-middle">Booking</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="pages-blank.html">
+                            <i class="align-middle" data-feather="log-in"></i> <span
+                                class="align-middle">Checkings</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="pages-blank.html">
+                            <i class="align-middle" data-feather="log-out"></i> <span
+                                class="align-middle">Checkouts</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" href="pages-blank.html">
+                            <i class="align-middle" data-feather="book"></i> <span class="align-middle">Reports</span>
+                        </a>
+                    </li>
+                    <div class="sidebar-cta">
+                        <div class="sidebar-cta-content">
+
+                            <div class="d-grid">
+                                <a href="upgrade-to-pro.html" class="btn btn-primary">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </ul>
+
+                <div class="sidebar-cta">
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="main">
+            <nav class="navbar navbar-expand navbar-light navbar-bg">
+                <a class="sidebar-toggle js-sidebar-toggle">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav navbar-align">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#"
+                                data-bs-toggle="dropdown">
+                                <i class="align-middle" data-feather="settings"></i>
+                            </a>
+
+                            <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+                                data-bs-toggle="dropdown">
+                                <i class="align-middle" data-feather="user"></i> <span
+                                    class="text-dark align-middle">Admin</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1"
+                                        data-feather="user"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="align-middle me-1"
+                                        data-feather="pie-chart"></i> Analytics</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="index.html"><i class="align-middle me-1"
+                                        data-feather="settings"></i> Settings & Privacy</a>
+                                <a class="dropdown-item" href="#"><i class="align-middle me-1"
+                                        data-feather="help-circle"></i> Help Center</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Log out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="content">
+    <div class="container-fluid p-0">
+        
+        <section class="ftco-section ftco-no-pt ftco-no-pb">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-12 ftco-animate ">
+                        <h1 class="h3 mb-3"><strong>Add</strong> Room Details</h1>
+                        <section class="ftco-section ftco-no-pt ftco-no-pb mt-1">
+                            <div class="container" style="background-color: white; border-radius: 20px;">
+                                <div class="row">
+                                    <div class="col-lg-12 ftco-animate p-4">
+    
+                        <form method="post" onsubmit="return test1();">
+                            <div class="row ">
+                                <div class="col-md-3 mb-3">
+                                    <label for="firstName" class="d-lg-block"><i class="bi bi-person-fill"></i>Room Type</label>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <select class="form-select" name="FName" id="fname" aria-label="Default select example">
+                                                    <option selected>Select Hotel</option>
+                                                    <option value="1">Classic Room</option>
+                                                    <option value="2">Luxury Room</option>
+                                                    <option value="3">Suite Room</option>
+                                                    <option value="1">Superior Room</option>
+                                                    <option value="2">Deluxe Room</option>
+                                                    <option value="3">Family Room</option>
+
+                                                </select>
+                                                <div id="fnameError" style="color: red;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="roomNo" class="form-label">Room No.</label>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="roomNo"
+                                                    placeholder="Room No." readonly>
+                                                <div id="roomNoError" style="color: red;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="roomNo" class="form-label">Room No. Start From</label>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="roomNo"
+                                                    placeholder="Room No. Start From" readonly>
+                                                <div id="roomNoError" style="color: red;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="roomNo" class="form-label">Total Rooms</label>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="roomNo"
+                                                    placeholder="Total Rooms" readonly>
+                                                <div id="roomNoError" style="color: red;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="basePrice" class="form-label">Base Price</label>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input type="text" class="form-control" id="basePrice"
+                                                    placeholder="Base Price">
+                                                <div id="basePriceError" style="color: red;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <label for="formFile" class="form-label">Upload Image</label>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                                <div id="imageError" style="color: red;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-3 mb-3">
+                                                <button class="btn btn-primary" onclick="addFeature()" style="background-color: #203d56; border-color: #22394e;">Add Feature +</button>
+                                            </div>
+                                            
+                                            <div class="row" id="featuresContainer">
+                                            </div>
+                                        </div>
+                                        <hr class="mb-4">
+                                        <button class="btn btn-primary btn-lg btn-block" type="submit" value="submit"
+                                            onclick="generateRoomNumber()">Save</button>
+                                    </form>
+                                    </div>
+                                    </div>
+                                    </div>
+                        </section>
+                                </div>
+                            </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        let roomNumber = 100;
+
+        function generateRoomNumber() {
+            document.getElementById("roomNo").value = roomNumber++;
+        }
+    </script>
+    <script src="js/app.js"></script>
+    <script>
+        let featureCount = 0;
+
+        function addFeature() {
+            featureCount++;
+            const featuresContainer = document.getElementById("featuresContainer");
+            const featureDiv = document.createElement("div");
+            featureDiv.classList.add("row", "mb-3");
+            featureDiv.innerHTML = `
+            <h5 style="font-weight:bold">Feature ${featureCount}</h5>
+            <div class="row mb-2">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" placeholder="Feature Name ${featureCount}"
+                        name="featureName${featureCount}">
+                </div>
+            </div>
+                <div class="col-md-9">
+                    <textarea type="text" class="form-control"
+                        placeholder="Feature Description ${featureCount}"
+                        name="featureDescription${featureCount}"></textarea>
+                </div>
+            `;
+            featuresContainer.appendChild(featureDiv);
+        }
+
+        function test1() {
+            let isValid = true;
+
+            // Validate Room Type
+            const roomType = document.getElementById("fname").value;
+            if (roomType === "Select Hotel") {
+                document.getElementById("fnameError").innerText = "Please select a valid room type";
+                isValid = false;
+            } else {
+                document.getElementById("fnameError").innerText = "";
+            }
+
+            if (!isValid) return false;
+
+
+            // Validate Base Price
+            const basePrice = document.getElementById("basePrice").value;
+            if (basePrice.trim() === "") {
+                document.getElementById("basePriceError").innerText = "Please enter a valid base price";
+                isValid = false;
+            } else {
+                document.getElementById("basePriceError").innerText = "";
+            }
+
+            if (!isValid) return false;
+            // Validate Upload Image
+            const uploadImage = document.getElementById("formFile").value;
+            if (uploadImage.trim() === "") {
+                document.getElementById("imageError").innerText = "Please upload an image";
+                isValid = false;
+            } else {
+                document.getElementById("imageError").innerText = "";
+            }
+
+            return isValid;
+        }
+
+
+    </script>
+
+</body>
+
+</html>
